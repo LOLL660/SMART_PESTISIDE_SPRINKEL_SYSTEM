@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['healthy', 'infection', 'pest']
+
+roboflow:
+  workspace: vedant-pnagu
+  project: pest_and_plant_infection-c3hkq
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/vedant-pnagu/pest_and_plant_infection-c3hkq/dataset/1

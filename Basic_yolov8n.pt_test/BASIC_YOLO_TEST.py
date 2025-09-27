@@ -4,7 +4,7 @@ from ultralytics import YOLO
 model = YOLO('yolov8n.pt')
 
 
-results = model.predict(source='test_image.jpg', conf=0.25, save=True)
+results = model.predict(source='basic_test_image.png', conf=0.25, save=True)
 
 
 result = results[0]

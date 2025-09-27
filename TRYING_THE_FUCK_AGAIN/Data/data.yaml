@@ -1,0 +1,7 @@
+names:
+- aphid
+- fruit fly
+- scale_insect
+nc: 3
+train: ../train/images
+val: ../valid/images

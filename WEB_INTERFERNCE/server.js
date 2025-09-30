@@ -29,7 +29,7 @@ app.get('/dashboard-status', (req, res) => {
         battery_level: randomInt(30, 95)                             // 30–95%
     };
 
-    const pythonCommand = 'python3 read_dashboard.py'; // Replace with your script
+    const pythonCommand = 'python read_dashboard.py'; // Replace with your script
 
     exec(pythonCommand, (error, stdout, stderr) => {
         if (error) {
@@ -104,7 +104,7 @@ app.post('/system-on', (req, res) => {
         message: 'सिस्टम शुरू करने में विफल। कृपया पुनः प्रयास करें।',
     };
 
-    const pythonCommand = 'python3 system_on.py';
+    const pythonCommand = 'python system_on.py';
 
     exec(pythonCommand, (error, stdout, stderr) => {
         if (error) {

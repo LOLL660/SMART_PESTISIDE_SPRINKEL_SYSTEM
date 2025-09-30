@@ -35,14 +35,16 @@ else:
         # This allows basic_main_program.py to find files (like ai.pt) using 
         # paths relative to the project root.
         process = subprocess.Popen(
-            [str(VENV_PYTHON), str(MAIN_PROGRAM)],
-            cwd=str(PROJECT_ROOT)  # <-- The key to fixing file path errors
-        )
+    [str(VENV_PYTHON), str(MAIN_PROGRAM)],
+    cwd=str(PROJECT_ROOT),
+    stdout=subprocess.DEVNULL,
+    stderr=subprocess.DEVNULL,
+    start_new_session=True
+)
 
         response = {
             "success": True,
             "message": "AI program started successfully using VENV interpreter.",
-            "pid": process.pid 
         }
     except Exception as e:
         # This catches errors if subprocess.Popen itself fails (e.g., permission denied)

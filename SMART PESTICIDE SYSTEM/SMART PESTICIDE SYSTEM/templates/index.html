@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कीटनाशक छिड़काव प्रणाली</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="icon">🌿</span>
+            <h1>कीटनाशक छिड़काव प्रणाली</h1>
+            <p>स्मार्ट फार्मिंग डैशबोर्ड</p>
+        </div>
+        <div class="date">
+            <p>आज की तारीख</p>
+            <p>9/9/2025</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="status-cards">
+            <div class="card status-card system-status">
+                <p class="label">सिस्टम स्थिति</p>
+                <div class="value-row">
+                    <h2 class="status-value active">--</h2>
+                    <span class="status-icon active">--</span>
+                </div>
+            </div>
+
+            <div class="card status-card tank-level">
+                <p class="label">टैंक का स्तर</p>
+                <div class="value-row">
+                    <h2 class="level-value">--</h2>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+
+            <div class="card status-card weather">
+                <p class="label">मौसम</p>
+                <div class="value-row">
+                    <h2 class="weather-value">--</h2>
+                    <span class="weather-icon">☀️</span>
+                </div>
+                <p class="weather-note">छिड़काव के लिए उपयुक्त</p>
+            </div>
+        </section>
+
+        <section class="control-summary-area">
+            <div class="control-panel">
+                <h3 class="panel-heading">छिड़काव नियंत्रण</h3>
+                
+                <div class="sprayer-image-container">
+                    <span class="sprayer-icon">🚿</span>
+                    <p class="sprayer-status">छिड़काव बंद</p>
+                </div>
+
+                <div class="control-buttons">
+                    <button id="startBtn" class="btn btn-start">▶ शुरू करें</button>
+                    <button id="stopBtn" class="btn btn-stop">■ बंद करें</button>
+                    <button id="updtdata" class="btn btn-updtdata">■ डेटा अपडेट करें</button>
+                </div>
+
+                <div class="level-slider-container">
+                    <label for="spray-level">छिड़काव की तीव्रता</label>
+                    <input type="range" id="spray-level" min="1" max="100" value="50">
+                    <div class="level-labels">
+                        <span>कम</span>
+                        <span>सामान्य</span>
+                        <span>अधिक</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary-panel">
+                <h3 class="panel-heading">आज का सारांश</h3>
+                <div class="summary-item">
+                    <p>कुल समय:</p>
+                    <p>--</p>
+                </div>
+                <div class="summary-item">
+                    <p>दवा उपयोग:</p>
+                    <p>--</p>
+                </div>
+                <div class="summary-item">
+                    <p>क्षेत्र कवर:</p>
+                    <p>--</p>
+                </div>
+                <div class="summary-item battery-status">
+                    <p>बैटरी:</p>
+                    <p>--</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="emergency-stop-container">
+            <button class="btn btn-emergency">
+                आपातकालीन रोकें
+            </button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -10,7 +10,7 @@ to use this repo the requiremnts file will be attached soon as soon as the repo 
 our team include 6 member which are also the collaboraters on this repo
 
 hats of to our team for their hard work :-
-      VEDANT GUPTA
+      VEDANT GUPTA (THE SMILEY FACE)
       ISHA AGARWAL (THE BOSS)
       PAYAL (THE DON)
       LAKSHMI AGARWAL (THE SWEET LADY)
